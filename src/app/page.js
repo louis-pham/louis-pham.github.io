@@ -1,113 +1,103 @@
-import Image from 'next/image'
+import { FaGraduationCap } from "react-icons/fa6"
+import Experience from "@/components/experience"
+import PhotoAlbum from "@/components/photo-album"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <section className="my-6">
+        <h1 className="text-3xl md:text-4xl font-medium mb-8">I'm Louis Pham,</h1>
+        <p>and welcome to my page! 👋 I'm a software developer based in the Greater Toronto Area. I love all sorts of creating and tinkering, whether it be coding, dance, PC building — you name it!</p>
+        <br />
+        <p>I'm currently at <b>Zensurance</b> (<a href="https://www.zensurance.com/careers" target="_blank">we're hiring!</a>), taking a tech-first approach with insurance to give small business owners a bit of relief in their already hectic lives.</p>
+      </section>
+      <section className="my-8">
+        <h2 className="text-2xl font-normal mb-2">My journey...</h2>
+        <div className="flex flex-col gap-2">
+          <Experience 
+            header={"Zensurance"}
+            location={"Toronto, CA"}
+            timeline={"2020 - now"}
+            active={true}
+            blurb={"We are so f***** back"}
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <ul className="list-disc list-inside">
+              <li>kicked off team's monolith to microservices migration</li>
+              <li>picked up DevOps skills to get new services up and running (most notably: Kubernetes, Docker, GitHub Actions)</li>
+              <li>became SME for essential domains within codebase, hosting knowledge-sharing sessions on latest changes (intra- and cross-team), and helping new hires with legacy knowledge</li>
+              <li>learned fancy insurance jargon</li>
+            </ul>
+          </Experience>
+          <Experience
+            header={"Link Interac Inc."}
+            location={"Yokohama, JP"}
+            timeline={"2017 - 2019"}
+            blurb={"What does everyone do after graduating university? Moving halfway across the globe for two years, of course!"}
+          >
+            <ul className="list-disc list-inside">
+              <li>prepared and ran English lessons for 3 public elementary schools, working with homeroom teachers to ensure retention of topics</li>
+              <li>ate delicious school lunches and outran all the kids during recess</li>
+            </ul>
+          </Experience>
+          <Experience
+            header={"Canadian Institute for Theoretical Astrophysics"}
+            location={"Toronto, CA"}
+            timeline={"2017"}
+            blurb={"Keep doing what you were doing in school, but get paid for it this time? Count me in!"}
+          >
+            <ul className="list-disc list-inside">
+              <li>created Python wrapper scripts for an existing gravitational lensing tool to facilitate applying our group's own custom maps and theoretical models</li>
+              <li>got to use a supercomputer (SciNet)!</li>
+            </ul>
+          </Experience>
+          <section className="flex justify-center outline-double outline-2 outline-offset-4 outline-stone-400 py-3 px-5 mx-2 mb-2 rounded-md">
+            <FaGraduationCap />  Wooo!
+          </section>
+          <Experience
+            header={"University of Toronto, KPE Faculty"}
+            location={"Toronto, CA"}
+            timeline={"2015 - 2016"}
+          >
+            <ul className="list-disc list-inside">
+              <li>built UofT's online Sports Hall of Fame</li>
+              <li>created schedule displays for gyms across campus</li>
+              <li>improved user experience with overhauled e-forms in OSCAR EMR</li>
+            </ul>
+          </Experience>
+          <Experience
+            header={"Canada Health Infoway"}
+            location={"Toronto, CA"}
+            timeline={"2014 - 2015"}
+          >
+            <ul className="list-disc list-inside">
+              <li>created plugins for a Confluence-based website, such as hover tooltips and lookup tools</li>
+              <li>improved several AngularJS websites with new features and styling</li>
+              <li>learned how to tie a tie</li>
+            </ul>
+          </Experience>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </section>
+      <section className="my-8">
+        <h2 className="text-2xl font-medium mb-2">Check out my <a href="/Louis Pham - Resume.pdf" target="_blank">resumé</a>.</h2>
+        <p>You can also take a peek at my <a href="https://www.linkedin.com/in/louispham" target="_blank">LinkedIn</a> and <a href="https://github.com/louis-pham" target="_blank">GitHub</a>, and if you want to contact me directly, send me an <a href="mailto:louis.c.pham@gmail.com">email</a>!</p>
+      </section>
+      <section className="my-6">
+        <h2 className="text-lg font-medium mb-2">Fun facts:</h2>
+        <ul className="list-disc list-inside">
+          <li>can spin on my head</li>
+          <li>will take up any opportunity to snowboard</li>
+          <li>日本語能力試験２級を持っています！</li>
+          <li>favourite emoji: 😬</li>
+          <li>recent top tracks: </li>
+        </ul>
+        <PhotoAlbum />
+      </section>
+      <section className="my-6">
+        <h2 className="text-lg font-medium mb-2">Thanks for visiting!</h2>
+      </section>
+      <section className="mt-20">
+        <p className="text-xs">You've made it this far! Have a cookie 🍪, they're delicious (unlike those pesky internet ones).</p>
+      </section>
+    </>
   )
 }

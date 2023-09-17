@@ -4,24 +4,67 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+::selection {
+  background: #fce9d4;
+  color: #000;
+  color: rgba(0,0,0,.84);
+}
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
+  color: rgba(0,0,0,.84);
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+a {
+  color: rgb(37 99 235);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#special-clip {
+  height: 283px
+}
+
+.square-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  grid-gap: 10px;
+}
+
+.content {
+  width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  #special-clip {
+    height: auto;
+  }
+
+  #special-clip video {
+    position: absolute;
+    top: -3px;
+  }
+
+  .square-container {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
 }
