@@ -40,31 +40,17 @@ a:hover {
   text-decoration: underline;
 }
 
-#special-clip {
-  height: 283px
-}
-
 .square-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
-  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3px;
 }
 
 .content {
   width: 100%;
 }
 
-@media screen and (min-width: 640px) {
-  #special-clip {
-    height: auto;
-  }
-
-  #special-clip video {
-    position: absolute;
-    top: -3px;
-  }
-
-  .square-container {
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  }
+.content video {
+  position: absolute;
 }
