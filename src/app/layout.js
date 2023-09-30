@@ -14,11 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={font.className}>
-        <header className="flex px-3 py-3">
-          {/* <Image src="/cable2.svg" width={75} height={50} alt="Picture of me" /> */}
-        </header>
-        <main className="flex flex-col mx-auto items-left px-6 py-20 max-w-2xl">
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+      </head>
+      <body className={`${font.className}`}>
+        <main className="flex flex-col mx-auto items-left px-6 py-20 max-w-3xl">
           {children}
         </main>
         <footer className="flex justify-between mx-6 py-3 border-t border-dashed">
