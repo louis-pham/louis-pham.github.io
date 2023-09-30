@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "static": "next build && touch ./out/.nojekyll",
-    "deploy": "gh-pages -t true -b gh-pages -d out"
+    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
@@ -20,8 +19,5 @@
     "react-dom": "18.2.0",
     "react-icons": "4.10.1",
     "tailwindcss": "3.3.3"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.0.0"
   }
 }
