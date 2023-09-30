@@ -23,7 +23,7 @@ export default function Home() {
             location={"Toronto, CA"}
             timeline={"2020 - now"}
             active={true}
-            blurb={<>"Looks like <s>meat</s> software's back on the menu!"</>}
+            blurb={<>&quot;Looks like <s>meat</s> software&apos;s back on the menu!&quot;</>}
           >
             <ul className="list-disc list-inside">
               <li>pioneered approach for team&apos;s monolith to microservices migration (NestJS)</li>
