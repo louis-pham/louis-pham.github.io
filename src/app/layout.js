@@ -1,14 +1,15 @@
 import './globals.css'
 import { Quicksand } from 'next/font/google'
 import Image from 'next/image'
+import Script from 'next/script'
 import { FaGithub, FaLinkedin } from "react-icons/fa6"
 
 const font = Quicksand({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "Louis Pham",
+  title: "Louis Pham | Software Developer",
   author: "Louis Pham",
-  description: "Software developer based in the Greater Toronto Area.",
+  description: "Hello and welcome to my personal website! — software developer based in the Greater Toronto Area",
 }
 
 export default function RootLayout({ children }) {
@@ -32,6 +33,20 @@ export default function RootLayout({ children }) {
           </div>
         </footer>
       </body>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-62H1YNFCNT" />
+      <Script id="google-analytics">
+        {`
+          const host = window.location.hostname;
+          if(host !== "localhost")
+          {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-62H1YNFCNT');
+          }
+        `}
+      </Script>
     </html>
   )
 }
