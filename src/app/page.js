@@ -112,7 +112,7 @@ export default function Home() {
         <h2 className="text-lg font-medium mb-2">Thanks for visiting!</h2>
       </section>
       <section className="mt-12">
-        <p className="text-xs">You&apos;ve made it this far! Have a cookie 🍪.</p>
+        <p className="text-xs">You&apos;ve made it to the end! Have a cookie 🍪.</p>
       </section>
     </>
   )
