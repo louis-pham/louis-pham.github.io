@@ -11,10 +11,10 @@ export default function Experience(props) {
         <span><FaRegCalendar style={iconStyle} /> {props.timeline}</span>
       </div>
     </div>
-    <h4 className="flex-1 text-md font-light">{props.position}</h4>
-    { props.blurb && <p className="text-sm font-medium py-1 text-black/[0.55]">
+    <h4 className="mb-2 flex-1 text-md font-normal">{props.position}</h4>
+    {props.children}
+    { props.blurb && <p className="mt-2 text-sm font-extralight py-1 text-black/[0.55]">
       {props.blurb}
     </p> }
-    {props.children}
   </section>
 }

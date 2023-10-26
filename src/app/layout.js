@@ -1,10 +1,10 @@
 import './globals.css'
-import { Quicksand } from 'next/font/google'
+import { Sora as MainFont } from 'next/font/google'
 import Image from 'next/image'
 import Script from 'next/script'
 import { FaGithub, FaLinkedin } from "react-icons/fa6"
 
-const font = Quicksand({ subsets: ['latin'] })
+const font = MainFont({ subsets: ['latin'] })
 
 export const metadata = {
   title: "Louis Pham | Software Developer",

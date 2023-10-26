@@ -8,14 +8,14 @@ const jpFont = Noto_Sans_JP({ weight: "300", preload: false })
 export default function Home() {
   return (
     <>
-      <section className="my-6">
-        <h1 className="text-3xl md:text-4xl font-medium mb-8">I&apos;m Louis Pham,</h1>
+      <section className="my-16">
+        <h1 className="text-3xl md:text-4xl font-semibold mb-16">I&apos;m Louis Pham,</h1>
         <p>and welcome to my page! 👋 I&apos;m a software developer based in the Greater Toronto Area. I love all sorts of creating and tinkering, whether it be coding, dance, PC building — you name it!</p>
         <br />
         <p>I&apos;m at <b>Zensurance</b> (<a href="https://www.zensurance.com/careers" target="_blank">we&apos;re hiring!</a>), taking a tech-first approach with insurance to give small business owners a bit of relief in their already hectic lives.</p>
       </section>
       <section className="my-8">
-        <h2 className="text-2xl font-normal mb-2">My journey...</h2>
+        <h2 className="text-2xl font-normal mb-6">My journey...</h2>
         <div className="flex flex-col gap-2">
           <Experience 
             header={"Zensurance"}
@@ -65,7 +65,7 @@ export default function Home() {
             </div>
             <FaCertificate className="text-red-600" style={{ display: "inline", verticalAlign: "-7%" }} /> HBSc.
             <p className="text-sm font-medium">
-              Computer Science + Astronomy & Astrophysics 
+              Computer Science, Astronomy & Astrophysics 
             </p>
           </section>
           <Experience
@@ -98,7 +98,7 @@ export default function Home() {
         <p>You can also take a peek at my <a href="https://www.linkedin.com/in/louispham" target="_blank">LinkedIn</a> and <a href="https://github.com/louis-pham" target="_blank">GitHub</a>, and if you want to contact me directly, send me an <a href="mailto:louis.c.pham@gmail.com">email</a>!</p>
       </section>
       <section className="my-6">
-        <h2 className="text-lg font-medium mb-2">Fun facts:</h2>
+        <h2 className="text-lg font-normal mb-2">Fun facts:</h2>
         <ul className="list-disc list-inside">
           <li>can spin on my head</li>
           <li>will take up any opportunity to snowboard</li>
@@ -109,7 +109,7 @@ export default function Home() {
         <PhotoAlbum />
       </section>
       <section className="my-6">
-        <h2 className="text-lg font-medium mb-2">Thanks for visiting!</h2>
+        <h2 className="text-lg font-normal mb-2">Thanks for visiting!</h2>
       </section>
       <section className="mt-12">
         <p className="text-xs">You&apos;ve made it to the end! Have a cookie 🍪.</p>
