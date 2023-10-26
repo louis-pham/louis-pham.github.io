@@ -57,10 +57,10 @@ export default function Home() {
             </ul>
           </Experience>
           <section className="outline-dotted outline-stone-400 py-3 px-5 mb-2 rounded-md text-black/[0.55]">
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center gap-x-2">
               <h3 className="flex-1 text-lg font-medium">University of Toronto</h3>
               <div className="flex gap-x-3 flex-wrap justify-start content-center text-sm font-light">
-                <span><FaGraduationCap style={{ display: "inline", verticalAlign: "-7%" }} /> 2017</span>
+                <span className="whitespace-nowrap overflow-hidden"><FaGraduationCap style={{ display: "inline", verticalAlign: "-7%" }} /> 2017</span>
               </div>
             </div>
             <FaCertificate className="text-red-600" style={{ display: "inline", verticalAlign: "-7%" }} /> HBSc.
