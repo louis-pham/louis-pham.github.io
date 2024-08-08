@@ -26,9 +26,9 @@ export default function Home() {
             blurb={<>&quot;Looks like <s>meat</s> software&apos;s back on the menu!&quot;</>}
           >
             <ul className="list-disc list-inside">
-              <li>pioneered approach for team&apos;s monolith to microservices migration (NestJS)</li>
-              <li>deploy new + manage existing services (Kubernetes, Docker, GitHub Actions)</li>
-              <li>share knowledge on product&apos;s latest technical changes (intra- and cross-team), and help new hires with legacy knowledge</li>
+              <li>pioneered new internal data-handling tool (NestJS)</li>
+              <li>kickstarted migration of team&apos;s monolith to microservices (NestJS)</li>
+              <li>share knowledge on product&apos;s latest technical changes (intra- and cross-team), and advise on legacy systems as an SME</li>
               <li>learning fancy insurance jargon</li>
             </ul>
           </Experience>
