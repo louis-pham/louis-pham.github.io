@@ -18,11 +18,11 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.svg" />
       </head>
-      <body className={`${font.className}`}>
-        <main className="flex flex-col mx-auto items-left px-6 py-20 max-w-3xl">
+      <body className={`${font.className} mx-auto max-w-5xl`}>
+        <main className="flex flex-col mx-auto items-left px-14 pt-20 pb-6 max-w-3xl pink-margin">
           {children}
         </main>
-        <footer className="flex justify-between mx-6 py-3 border-t border-dashed">
+        <footer className="flex justify-between mx-1 px-4 py-3 border-t border-dashed">
           <div className="flex items-center gap-1">
             <div className="text-md"><a className="text-black" href="https://www.linkedin.com/in/louispham" target="_blank"><FaLinkedin /></a></div>
             <div className="text-md"><a className="text-black" href="https://github.com/louis-pham" target="_blank"><FaGithub /></a></div>

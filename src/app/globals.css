@@ -41,6 +41,15 @@ a:hover {
   text-decoration: underline;
 }
 
+.blue-underline {
+  padding-bottom: 0.3rem;
+  border-bottom: #b0ccff 1px dashed;
+}
+
+.pink-margin {
+  border-left: #ffeaf4 5px double;
+}
+
 .square-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

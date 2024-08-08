@@ -1,4 +1,4 @@
-import { FaGraduationCap, FaCertificate, FaRegCalendar } from "react-icons/fa6"
+import { FaGraduationCap, FaCertificate, FaRegFilePdf } from "react-icons/fa6"
 import { Noto_Sans_JP } from 'next/font/google'
 import Experience from "@/components/experience"
 import PhotoAlbum from "@/components/photo-album"
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <section className="my-16">
-        <h1 className="text-3xl md:text-4xl font-semibold mb-16">I&apos;m Louis Pham,</h1>
+        <h1 className="text-3xl md:text-4xl mb-16 blue-underline">I&apos;m <span className="font-semibold">Louis Pham</span>,</h1>
         <p>and welcome to my page! 👋 I&apos;m a software developer based in the Greater Toronto Area. I love all sorts of creating and tinkering, whether it be coding, dance, PC building — you name it!</p>
         <br />
         <p>I&apos;m at <b>Zensurance</b> (<a href="https://www.zensurance.com/careers" target="_blank">we&apos;re hiring!</a>), taking a tech-first approach with insurance to give small business owners a bit of relief in their already hectic lives.</p>
@@ -94,7 +94,7 @@ export default function Home() {
         </div>
       </section>
       <section className="my-8">
-        <h2 className="text-2xl font-medium mb-2">Check out my <a href="/Louis Pham - Resume.pdf" target="_blank">resumé</a>.</h2>
+        <h2 className="text-2xl font-medium mb-2 blue-underline">Check out my <a href="/Louis Pham - Resume.pdf" target="_blank">resumé <FaRegFilePdf className="inline-block" /></a>!</h2>
         <p>You can also take a peek at my <a href="https://www.linkedin.com/in/louispham" target="_blank">LinkedIn</a> and <a href="https://github.com/louis-pham" target="_blank">GitHub</a>, and if you want to contact me directly, send me an <a href="mailto:louis.c.pham@gmail.com">email</a>!</p>
       </section>
       <section className="my-6">
@@ -109,10 +109,10 @@ export default function Home() {
         <PhotoAlbum />
       </section>
       <section className="my-6">
-        <h2 className="text-lg font-normal mb-2">Thanks for visiting!</h2>
+        <h2 className="text-lg font-normal mb-2 ">Thanks for visiting!</h2>
       </section>
       <section className="mt-12">
-        <p className="text-xs">You&apos;ve made it to the end! Have a cookie 🍪.</p>
+        <p className="text-xs ">You&apos;ve made it to the end! Have a cookie 🍪.</p>
       </section>
     </>
   )
