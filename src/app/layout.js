@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
             <div className="text-md"><a className="text-black" href="https://github.com/louis-pham" target="_blank"><FaGithub /></a></div>
           </div>
           <div className="flex gap-1 items-center">
-            <div className="text-xs">© 2023 Louis Pham</div>
+            <div className="text-xs">© 2024 Louis Pham</div>
             <Image src="/cable2.svg" width={50} height={50} alt="My tag" />
           </div>
         </footer>
