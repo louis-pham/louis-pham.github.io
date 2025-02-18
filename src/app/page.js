@@ -23,7 +23,7 @@ export default function Home() {
             location={"Toronto, CA"}
             timeline={"2024 - now"}
             active={true}
-            blurb={<>"haha money printer go brrrrr"</>}
+            blurb={<>&quot;haha money printer go brrrrr&quot;</>}
           >
             <ul className="list-disc list-inside">
               <li>Dockerized application to set up lower environments and prepare for future production deployment improvements</li>
