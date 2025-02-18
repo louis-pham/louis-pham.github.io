@@ -12,24 +12,37 @@ export default function Home() {
         <h1 className="text-3xl md:text-4xl mb-16 blue-underline">I&apos;m <span className="font-semibold">Louis Pham</span>,</h1>
         <p>and welcome to my page! 👋 I&apos;m a software developer based in the Greater Toronto Area. I love all sorts of creating and tinkering, whether it be coding, dance, PC building — you name it!</p>
         <br />
-        <p>I&apos;m at <b>Zensurance</b> (<a href="https://www.zensurance.com/careers" target="_blank">we&apos;re hiring!</a>), taking a tech-first approach with insurance to give small business owners a bit of relief in their already hectic lives.</p>
+        <p>I&apos;m currently at <b>Topstep</b> (<a href="https://www.topstep.com/join-our-team" target="_blank">check out our openings</a>) providing a supportive and fostering environment for futures traders, both novice and pro, to succeed in their craft.</p>
       </section>
       <section className="my-8">
         <h2 className="text-2xl font-normal mb-6">My journey...</h2>
         <div className="flex flex-col gap-2">
+        <Experience 
+            header={"Topstep"}
+            position={"Intermediate Software Engineer"}
+            location={"Toronto, CA"}
+            timeline={"2024 - now"}
+            active={true}
+            blurb={<>"haha money printer go brrrrr"</>}
+          >
+            <ul className="list-disc list-inside">
+              <li>Dockerized application to set up lower environments and prepare for future production deployment improvements</li>
+              <li>improve developer experience with Datadog implementation</li>
+              <li>migrate legacy application via strangler pattern into new PERN + GraphQL application</li>
+            </ul>
+          </Experience>
           <Experience 
             header={"Zensurance"}
             position={"Software Developer"}
             location={"Toronto, CA"}
-            timeline={"2020 - now"}
-            active={true}
+            timeline={"2020 - 2024"}
             blurb={<>&quot;Looks like <s>meat</s> software&apos;s back on the menu!&quot;</>}
           >
             <ul className="list-disc list-inside">
               <li>pioneered new internal data-handling tool (NestJS)</li>
               <li>kickstarted migration of team&apos;s monolith to microservices (NestJS)</li>
-              <li>share knowledge on product&apos;s latest technical changes (intra- and cross-team), and advise on legacy systems as an SME</li>
-              <li>learning fancy insurance jargon</li>
+              <li>shared knowledge on product&apos;s latest technical changes (intra- and cross-team), and advise on legacy systems as an SME</li>
+              <li>learned fancy insurance jargon</li>
             </ul>
           </Experience>
           <Experience
